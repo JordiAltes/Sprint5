@@ -40,5 +40,12 @@ h1 {
     font-size: larger;
     color: wheat;
 }
+.scoreButtons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* display: none; */
+
+}
 
 

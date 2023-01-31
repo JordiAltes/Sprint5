@@ -10,6 +10,7 @@ function nextJoke() {
       console.log(joke);
       HTMLResponse.innerHTML = joke;
       
+      
 });
 }
 
