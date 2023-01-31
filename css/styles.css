@@ -1,8 +1,13 @@
-* {
+.principal {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    background-image: url(/img/closeup-portrait-of-happy-carefree-young-guy-laughing-loud-chuckling-over-hilarious-joke-bending-bac.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
 }
 
-.joke {
+.header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     margin-top: 15px;
     display: flex;
@@ -17,8 +22,23 @@ h1 {
     align-items: center;
     justify-content: center;
 }
-.botton-Joke {
+.button-Joke {
     margin-bottom: 15px;
+    background-color: wheat;
+    padding: 10px 20px;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0 4px #999;
+    transition: 0.3s;
+}
+.button-Joke:active {
+    box-shadow: 0 2px #666;
+    transform: translateY(4px);
+}
+.joke{
+    font-size: larger;
+    color: wheat;
 }
 
 
