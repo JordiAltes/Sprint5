@@ -14,12 +14,19 @@ function nextJoke() {
     });
 }
 const arrayJokes = [];
+let objectJoke = { joke: "", date: "", score: 0 };
 function scoreJoke(id) {
     const scoreJoke = id;
     const date = new Date();
     const dateToString = date.toISOString();
-    const objectJoke = { joke: joke, date: dateToString, score: scoreJoke };
+    const existJoke = arrayJokes.find((x) => x.joke === joke);
+    if (!existJoke) {
+        objectJoke = { joke: joke, date: dateToString, score: scoreJoke };
+        arrayJokes.push(objectJoke);
+    }
+    if (existJoke) {
+        objectJoke.score = scoreJoke;
+    }
     console.log(objectJoke);
-    arrayJokes.push(objectJoke);
     console.log(arrayJokes);
 }
