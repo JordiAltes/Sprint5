@@ -7,8 +7,6 @@ function nextJoke() {
         .then((data) => {
         const joke = data.joke;
         console.log(joke);
-        if (HTMLResponse != null) {
-            HTMLResponse.innerHTML = joke;
-        }
+        HTMLResponse.innerHTML = joke;
     });
 }
