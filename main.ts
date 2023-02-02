@@ -50,7 +50,7 @@ function nextJoke() {
     fetch(API_URL2, header)
       .then((response) => response.json())
       .then((data) => {
-        joke2 = data.joke;
+        joke2 = data.value;
         console.log(joke2);
         HTMLResponse.innerHTML = joke2;
       });
